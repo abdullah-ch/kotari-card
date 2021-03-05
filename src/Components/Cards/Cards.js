@@ -60,9 +60,8 @@ const Cards = () => {
               title="Contemplative Reptile"
             />
 
-            {/*  here when I showComponent over my <Stars/> and  <FavoriteBorderIcon/>, they keep on flickering as state changes on showComponenting
-            over them
-            */}
+            {/*  here when I hover over my <Stars/> and  <FavoriteBorderIcon/>, they opacity
+             */}
             {showComponent ? (
               <>
                 <div id={styles.stars}>
