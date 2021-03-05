@@ -2,8 +2,10 @@
   width: 300px;
   justify-content: center;
 }
+
 #imageCentre {
   align-items: center !important;
+  position: relative;
 }
 
 #textCentre {
@@ -31,4 +33,13 @@
   right: 0;
   padding: 20px 20px 0 0;
   color: aliceblue;
+}
+
+#stars {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50%;
 }

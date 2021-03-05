@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import Cards from "./Components/Cards/Cards";
+import CardsBox from "./Components/CardsBox/CardsBox";
 
 function App() {
   return (
     <React.Fragment>
-      <Cards />
+      <CardsBox />
     </React.Fragment>
   );
 }
