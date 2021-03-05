@@ -16,19 +16,42 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 345,
   },
-
-  "&:hover": {
-    backgroundColor: "rgb(7, 177, 77, 0.42)",
-  },
 });
 
 const Cards = () => {
-  const [hover, setHover] = useState(false);
+  const [showComponent, setShowComponent] = useState(false);
+  const [showOpacity, setShowOpacity] = useState(false);
   const classes = useStyles();
+
+  const handleToggleHoverIn = (event) => {
+    event.preventDefault();
+    setShowComponent(true);
+  };
+
+  const handleToggleHoverOut = (event) => {
+    event.preventDefault();
+    setShowComponent(false);
+  };
+
+  const handleOpacityHoverIn = (event) => {
+    event.preventDefault();
+    setShowOpacity(true);
+  };
+
+  const handleOpacityHoverOut = (event) => {
+    event.preventDefault();
+    setShowOpacity(false);
+  };
+
+  console.log("The state showComponent value is ", showComponent);
 
   return (
     <div className={styles.container}>
-      <Card className={classes.root}>
+      <Card
+        onMouseEnter={handleToggleHoverIn}
+        onMouseLeave={handleToggleHoverOut}
+        className={classes.root}
+      >
         <CardActionArea>
           <div id={styles.imageCentre}>
             <CardMedia
@@ -39,13 +62,17 @@ const Cards = () => {
               title="Contemplative Reptile"
             />
 
-            {/* <CardMedia component={<Stars />} /> */}
-
-            <div id={styles.stars}>
-              <Stars />
-            </div>
-
-            <FavoriteBorderIcon fontSize="large" id={styles.heart} />
+            {/*  here when I showComponent over my <Stars/> and  <FavoriteBorderIcon/>, they keep on flickering as state changes on showComponenting
+            over them
+            */}
+            {showComponent ? (
+              <>
+                <div id={styles.stars}>
+                  <Stars />
+                </div>
+                <FavoriteBorderIcon fontSize="large" id={styles.heart} />
+              </>
+            ) : null}
           </div>
           <CardContent>
             <Typography

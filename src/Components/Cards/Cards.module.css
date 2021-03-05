@@ -3,14 +3,23 @@
   justify-content: center;
 }
 
+.image:hover {
+  opacity: 0.5;
+}
+
 #imageCentre {
   align-items: center !important;
   position: relative;
 }
 
+/* #imageCentre:hover {
+  opacity: 0.5;
+} */
+
 #textCentre {
   text-align: center;
 }
+
 .container {
   display: flex;
   justify-content: center;
