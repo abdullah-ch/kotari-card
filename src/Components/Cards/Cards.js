@@ -18,7 +18,6 @@ const useStyles = makeStyles({
 
 const Cards = () => {
   const [showComponent, setShowComponent] = useState(false);
-  const [showOpacity, setShowOpacity] = useState(false);
   const classes = useStyles();
 
   const handleToggleHoverIn = (event) => {
@@ -29,16 +28,6 @@ const Cards = () => {
   const handleToggleHoverOut = (event) => {
     event.preventDefault();
     setShowComponent(false);
-  };
-
-  const handleOpacityHoverIn = (event) => {
-    event.preventDefault();
-    setShowOpacity(true);
-  };
-
-  const handleOpacityHoverOut = (event) => {
-    event.preventDefault();
-    setShowOpacity(false);
   };
 
   console.log("The state showComponent value is ", showComponent);
@@ -60,7 +49,8 @@ const Cards = () => {
               title="Contemplative Reptile"
             />
 
-            {/*  here when I hover over my <Stars/> and  <FavoriteBorderIcon/>, they opacity
+            {/*  here when I hover over my <Stars/> and  <FavoriteBorderIcon/>, the hover effect of opacity that I have on
+            my Card's image, simply gets removes
              */}
             {showComponent ? (
               <>
