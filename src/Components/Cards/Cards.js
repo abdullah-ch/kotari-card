@@ -49,8 +49,9 @@ const Cards = () => {
               title="Contemplative Reptile"
             />
 
-            {/*  here when I hover over my <Stars/> and  <FavoriteBorderIcon/>, the hover effect of opacity that I have on
-            my Card's image, simply gets removes
+            {/*
+            here when I hover over my <Stars/> and  <FavoriteBorderIcon/>, the hover effect of opacity that I have on
+            my Card's image, vanishes
              */}
             {showComponent ? (
               <>

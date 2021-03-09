@@ -8,7 +8,6 @@ export default function Stars() {
   return (
     <div>
       <Box component="fieldset" mb={3} borderColor="transparent">
-        {/* <Typography component="legend">Controlled</Typography> */}
         <Rating
           name="simple-controlled"
           value={value}
@@ -17,20 +16,6 @@ export default function Stars() {
           }}
         />
       </Box>
-
-      {/*<Box component="fieldset" mb={3} borderColor="transparent">
-        <Typography component="legend">Read only</Typography>
-        <Rating name="read-only" value={value} readOnly />
-      </Box> */}
-
-      {/* <Box component="fieldset" mb={3} borderColor="transparent">
-        <Typography component="legend">Disabled</Typography>
-        <Rating name="disabled" value={value} disabled />
-      </Box> */}
-      {/* <Box component="fieldset" mb={3} borderColor="transparent">
-        <Typography component="legend">Pristine</Typography>
-        <Rating name="pristine" value={null} />
-      </Box> */}
     </div>
   );
 }
