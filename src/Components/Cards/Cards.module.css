@@ -3,9 +3,9 @@
   justify-content: center;
 }
 
-.image:hover {
+/* .image:hover {
   opacity: 0.7;
-}
+} */
 
 #imageCentre {
   align-items: center !important;
@@ -15,6 +15,10 @@
 /* #imageCentre:hover {
   opacity: 0.5;
 } */
+
+#imageCentre:hover .image {
+  opacity: 0.5;
+}
 
 #textCentre {
   text-align: center;
