@@ -46,13 +46,8 @@ const Cards = () => {
               alt=""
               className={styles.image}
               image={image}
-              title="Contemplative Reptile"
             />
 
-            {/*
-            here when I hover over my <Stars/> and  <FavoriteBorderIcon/>, the hover effect of opacity that I have on
-            my Card's image, vanishes
-             */}
             {showComponent ? (
               <>
                 <div id={styles.stars}>
@@ -72,7 +67,7 @@ const Cards = () => {
               Printed round Neck
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              <div class="text">
+              <div className={styles.bottomContent}>
                 <p id={styles.price}>
                   <b>Rs. 454</b>
                   <strike>Rs. 699</strike>
