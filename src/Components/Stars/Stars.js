@@ -7,7 +7,12 @@ export default function Stars() {
 
   return (
     <div>
-      <Box component="fieldset" mb={3} borderColor="transparent">
+      <Box
+        component="fieldset"
+        mb={3}
+        borderColor="transparent"
+        style={{ color: " color: #ffce26;" }}
+      >
         <Rating
           name="simple-controlled"
           value={value}
