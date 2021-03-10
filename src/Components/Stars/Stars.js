@@ -7,14 +7,10 @@ export default function Stars() {
 
   return (
     <div>
-      <Box
-        component="fieldset"
-        mb={3}
-        borderColor="transparent"
-        style={{ color: " color: #ffce26;" }}
-      >
+      <Box component="fieldset" mb={3} borderColor="transparent">
         <Rating
           name="simple-controlled"
+          style={{ color: "#ffce26" }}
           value={value}
           onChange={(event, newValue) => {
             setValue(newValue);
